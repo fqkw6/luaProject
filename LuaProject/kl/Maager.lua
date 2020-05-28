@@ -1,17 +1,16 @@
-require("BaseClass")
-Singleton = require("Singleton")
+require("kl.BaseClass")
+Singleton = require("kl.Singleton")
+---@class Maager:Singleton
 local Maager = BaseClass("Maager", Singleton)
 
-function __init(self)
+function Maager:__init()
     -- body
     print(self)
 end
 
-function Open(self, arg)
+function Maager:Open(arg)
     -- body
     print(self, "hkhk", arg)
 end
 
-Maager.Open = Open
-Maager.__init = __init
 return Maager

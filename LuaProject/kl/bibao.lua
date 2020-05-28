@@ -35,10 +35,20 @@ end
 --将函数赋值给变量，此时变量a绑定了函数InnerFun1,b绑定了函数InnerFun2
 local a, b = Closure()
 InnerFun1()
- --也可以直接调用
+--也可以直接调用
+InnerFun2()
 InnerFun2()
 --调用a
 -- a()
 
 -- --调用b
 -- b()
+local biao = {}
+---全局方法
+function biao.Tets_ppp()
+    print("dsds")
+end
+tesss = function()
+    print("tesss")
+end
+return biao

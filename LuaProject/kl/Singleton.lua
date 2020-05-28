@@ -2,9 +2,9 @@
 -- added by wsh @ 2017-12-05
 -- 单例类
 --]]
-require("BaseClass")
+require("kl.BaseClass")
 type(BaseClass("Singleton", nil))
-
+---@class Singleton
 local Singleton = BaseClass("Singleton", nil)
 
 local function __init(self)
